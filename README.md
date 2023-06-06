@@ -12,10 +12,10 @@ Interação com o mundo: os jogadores podem interagir com o mundo do jogo, conve
 
 ## Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
--Typescript
--POO
--Javascript
--Node
+- Typescript
+- POO
+- Javascript
+- Node
 
 ## Instalação
 Para instalar e executar o projeto localmente, siga os passos abaixo:
