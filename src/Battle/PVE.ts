@@ -10,13 +10,13 @@ export default class PVE extends Battle {
     this._monster = monster;
   }
 
-  public playerAttack(): void {
+  private playerAttack(): void {
     for (let i = 0; i < this._monster.length; i += 1) {
       this.player.attack(this._monster[i]);
     }
   }
 
-  public monsterAttacks(): void {
+  private monsterAttacks(): void {
     for (let i = 0; i < this._monster.length; i += 1) {
       this._monster[i].attack(this.player);
       if (this.player.lifePoints === -1) break;

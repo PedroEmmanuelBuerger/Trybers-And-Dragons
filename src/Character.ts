@@ -66,7 +66,7 @@ export default class Character implements Fighter {
     return { ...this._energy };
   }
 
-  public VerifyLife(): void {
+  private VerifyLife(): void {
     const life = this._lifePoints;
     if (life <= 0) {
       this._lifePoints = -1;
