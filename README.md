@@ -20,7 +20,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## Instalação
 Para instalar e executar o projeto localmente, siga os passos abaixo:
 
-##  Clone o repositório para sua máquina local.
+Clone o repositório para sua máquina local.
 git clone https://github.com/PedroEmmanuelBuerger/project-Trybers-And-Dragons.git
 Instale o Node.js em sua máquina.
 Instale as dependências do projeto.
