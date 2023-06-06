@@ -31,7 +31,7 @@ npx ts-node src/index.ts
 
 
 ## Principais Aprendizados
-Principal aprendizao foi o uso dos conceitos de solid para a programação orientada a objetos, visando buscar principalmente por uma organização maior e uma aplicar clean code para futuras refatorações.
-Outro aprendizado muito importante foi o proprio POO, a qual utilizei pela primeira vez classes, utilizando dos 4 pilares do POO(Abstração, encapsulamento, herança e polimorfismo), tambem utilizando de instancias, metodos e atributos.
+Principal aprendizado foi o uso dos conceitos de solid para a programação orientada a objetos(POO), visando buscar principalmente por uma organização maior e uma aplicar clean code para futuras refatorações.
+Outro aprendizado muito importante foi o proprio POO, a qual utilizei pela primeira vez classes, utilizando dos 4 pilares do POO (Abstração, encapsulamento, herança e polimorfismo), tambem utilizando de instancias, metodos e atributos.
 ## Conclusão
 O projeto Trybers & Dragons oferece aos jogadores uma experiência interativa no mundo do RPG de mesa, permitindo a criação de personagens, batalhas contra monstros e dragões, e batalha com outros personagens.
