@@ -5,16 +5,20 @@ export default function Login() {
     const history = useHistory();
 
     const redirect = (par) => {
-     const { value } = par.target;
-     history.push(value);
+        const { value } = par.target;
+        history.push(value);
     };
 
     return (
         <div>
-            <h1>Chose Path</h1>
-            <button onClick={(e) => redirect(e)} value={'Character'}>
-                Create Character
-            </button>
+            <header>
+                <h1>Chose Path</h1>
+            </header>
+            <section>
+                <button onClick={(e) => redirect(e)} value={'Character'}>
+                    Create Character
+                </button>
+            </section>
         </div>
     );
 }
