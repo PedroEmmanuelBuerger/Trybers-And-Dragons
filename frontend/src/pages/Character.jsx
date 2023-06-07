@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import CharacterContext from '../context/CharacterContext';
 
 export default function Character() {
-    const { setRace, setArchtype, setName } = useContext(CharacterContext);
+    const { setRace, setArchtype, setName, race, archtype, name } = useContext(CharacterContext);
 
-    const setNameFunc = ({target}) => {
+    const setNameFunc = ({ target }) => {
         const { value } = target;
         setName(value);
     }
@@ -14,9 +14,13 @@ export default function Character() {
         setRace(value);
     };
 
-    const setArchFUnc = ({target}) => {
-        const {value } = target;
+    const setArchFUnc = ({ target }) => {
+        const { value } = target;
         setArchtype(value);
+    }
+
+    const createNewCharacter = () => {
+        console.log(race, archtype, name);
     }
 
     return (
@@ -24,9 +28,7 @@ export default function Character() {
             <form>
                 <label htmlFor="chose-Name">
                     digite o nome:
-                    <input type='text' id='chose-Name' placeholder='ex: Hagar...' onChange={setNameFunc}/>
-                    <br />
-                    <br />
+                    <input type='text' id='chose-Name' placeholder='ex: Hagar...' onChange={setNameFunc} />
                 </label>
                 escolha a raça:
                 <label htmlFor='chose-Race'>
@@ -37,10 +39,8 @@ export default function Character() {
                         <option value="Orc">Orc</option>
                     </select>
                 </label>
-                <br />
-                <br />
                 <label htmlFor='chose-Arch'>
-                escolha o Archtétipo:
+                    escolha o Archtétipo:
                     <select name="Arch" id="Arch" onChange={setArchFUnc}>
                         <option value="Mage" >Mage</option>
                         <option value="Ranger">Ranger</option>
@@ -48,6 +48,7 @@ export default function Character() {
                         <option value="Necromancer">Necromancer</option>
                     </select>
                 </label>
+                <button type='Button' onClick={createNewCharacter}>Gerar Ficha</button>
             </form>
         </div>
     );
