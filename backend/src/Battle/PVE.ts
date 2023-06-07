@@ -30,6 +30,6 @@ export default class PVE extends Battle {
       this.monsterAttacks();
       if (this.player.lifePoints === -1) break;
     }
-    return -1;
+    return 1;
   }
 }
