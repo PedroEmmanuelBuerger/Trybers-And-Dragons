@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import CharacterContext from '../context/CharacterContext';
+import Character from '../../Backend/Character';
+import CharacterList from '../components/CharacterList';
 
-export default function Character() {
-    const { setRace, setArchtype, setName, race, archtype, name } = useContext(CharacterContext);
+export default function nCharacter() {
+    const { setRace, setArchtype, setName, race, archtype, name, arrCharacters, setArrChar } = useContext(CharacterContext);
 
     const setNameFunc = ({ target }) => {
         const { value } = target;
@@ -20,7 +22,10 @@ export default function Character() {
     }
 
     const createNewCharacter = () => {
-        console.log(race, archtype, name);
+        const player = new Character(name, race, archtype);
+        const oldArr = [...arrCharacters]
+        oldArr.push(player);
+        setArrChar(oldArr);
     }
 
     return (
@@ -50,6 +55,7 @@ export default function Character() {
                 </label>
                 <button type='Button' onClick={createNewCharacter}>Gerar Ficha</button>
             </form>
+            <CharacterList />
         </div>
     );
 }
